@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,6 +29,8 @@
               colors: {
                 accent: 'rgba(255, 220, 38, 1)',
                 primary: '#F9DF8A',
+                secondary: '#FFF9F4',
+                third: '#111111',
               }
             }
           }
@@ -37,8 +39,29 @@
     <!-- Fontawesome CDN -->
     <script src="https://kit.fontawesome.com/900314243b.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="text-third">
     <header>
+        <!-- Navbar section -->
+        <nav class="font-sora flex items-center bg-secondary justify-between border-b-2 border-third px-4 py-3 lg:px-32 lg:py-6 lg:border-none">
+            <div class="flex items-center">
+                <img class="w-12 h-12 mr-2" src="images/logo-header.png" alt="Paw">
+                <h3 class="hidden lg:block font-normal text-2xl">Browse<span class="text-accent">4</span>Pets</h3>
+            </div>
+            <div class="hidden lg:block">
+                <ul class="flex justify-around text-xl space-x-8 ">
+                    <li><a href=""></a>Find a pet</li>
+                    <li><a href=""></a>Breeds</li>
+                    <li><a href=""></a>Contact Us</li>
+                </ul>
+            </div>
+            <div class="w-80 hidden lg:flex lg:items-center justify-around">
+               <img class="w-6 h-6" src="images/bell.png" alt="">
+               <img class="w-6 h-6" src="images/search.png" alt="">
+               <button class="btn bg-transparent border-accent px-8 py-2.5">Login</button>
+               <button class="btn bg-accent px-8 py-2.5">Register</button>
+            </div>
+            <i class="fa-solid fa-bars fa-2xl lg:hidden"></i>
+        </nav>
     </header>
     <main>
     </main>
